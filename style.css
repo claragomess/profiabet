@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    margin: 0;
+    background: linear-gradient(20deg,#4F1887,#35105A, #140326);
+    height: 100vh;
+    width: 100vw;
+}
+
+/* mobile  */
+@media (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+
+}
+/* mobile  */
+@media (min-width:768px) AND (max-width: 1024px){
+    
+}
+/* mobile  */
+@media (min-width: 1024px){
+
+}
