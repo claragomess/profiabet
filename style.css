@@ -1,31 +1,382 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   
+@font-face {
+    font-family: 'Fonte Normal';
+    src: url('./ProductSans-Regular.ttf');
 }
 body{
-    margin: 0;
-    background: linear-gradient(20deg,#4F1887,#35105A, #140326);
-    height: 100vh;
+    font-family: 'Fonte Normal';
+    background:linear-gradient(180deg,#2E0052 0%, #5400A5 100%);
+    color: white;
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-header{
+    background-color: rgba(21,6,35,1);
+    color:white;
+    display: none;
+}
+.primeira-section{
+    display: flex;
     width: 100vw;
-}
-
-/* mobile  */
-@media (max-width: 768px){
-    .container{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    
+    height: 100vh;
 
 }
-/* mobile  */
-@media (min-width:768px) AND (max-width: 1024px){
+.section-grid-1{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(82,23,137,1) 0%, rgba(49,14,81,1) 28%, rgba(21,6,35,1) 72%);
     
 }
-/* mobile  */
-@media (min-width: 1024px){
+/* mobile */
+@media (max-width:768px){
+        .header{
+            display: flex;
+        }
+        .icone-profiabet{
+            display: flex;
+            position: absolute;
+            margin-top: 60px;
+            margin-left: 60px;
+        }
+        .login{
+            display: flex;
+            position: relative;
+            margin-top: 140px;
+            margin-left: 60px;
+            gap:10px;
+            flex-direction: row;
+            position: relative;
+        }
+        .criar-conta{
+            display: flex;
+            width: 135px;
+            height: 35px;
+            border-radius: 20px;
+            background-color: rgb(216, 158, 49);
+            font-size: 12px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border: 1px solid white;
+        }
+        .sessao{
+            display: flex;
+            width: 135px;
+            height: 35px;
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+            font-size: 12px;
+            justify-content: center;
+            align-items: center;
+            color: rgb(82,23,137);
+            border: 1px solid white;
+        }
+        .segunda-section{
+            display: flex;
+            position: relative;
+            margin-top: -650px;
+        }
+        .foto-mobile{
+            display: flex;
+            position: relative;
+            margin-left: 10px;
+            margin-top: -40px;
+        }
+        .descricao{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            width: 330px;
+            height: 220px;
+            left: 45px;
+            margin-top: -3px;
+            border-radius: 15px;
+          
+        }
+        .titulo-descricao{
+            color: white;
+            position: relative;
+            margin-top: -15px;
+            left: 25px;
+            font-size: 28px;
+        }
+        .descricao-texto{
+            display: flex;
+            position: relative;
+            margin-top: -160px;
+            width: 270px;
+            height: 50px;
+            left: 75px;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            font-weight:100;
+        }
+        .botao-leia-mais{
+            display: flex;
+            position: relative;
+            margin-top: 130px;
+            left: 150px;
+            width: 115px;
+            height: 35px;
+            border-radius: 20px;
+            background-color: white;
+            color: rgb(82,23,137);
+            font-size: 7px;
+            justify-content: center;
+            align-items: center;
+        }
+        .botao-leia-mais:hover{
+            background-color: rgb(255, 193, 7);
+            color: #000;
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+         }
+        .seta{
+            display: flex;
+            position: relative;
+            margin-top: 40px;
+            left: 150px;
+            opacity: 40%;
+        }
+}
+/* tablet */
+@media (min-width:768px) AND (max-width:1024px){
+        .primeira-section{
+            display: flex;
+            width: 400px;
+        }
+        .section-grid-1{
+            flex-direction: row;
+            background: red !important;           
+            max-width: 100%;
+        }
 
+        
+        .header{
+            display: flex;
+        }
+        .main-header{
+            display: block;
+        }
+        .icone-profiabet{
+            display: flex;
+            margin-top: 100px;
+            margin-left: 230px;
+        }
+        .login{
+            display: flex;
+            margin-top: 180px;
+            margin-left: 230px;
+            gap:10px;
+            flex-direction: row;
+        }
+        .criar-conta{
+            display: flex;
+            width: 135px;
+            height: 35px;
+            border-radius: 20px;
+            background-color: rgb(216, 158, 49);
+            font-size: 12px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border: 1px solid white;
+        }
+        .sessao{
+            display: flex;
+            width: 135px;
+            height: 35px;
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+            font-size: 12px;
+            justify-content: center;
+            align-items: center;
+            color: rgb(82,23,137);
+            border: 1px solid white;
+        }
+        .segunda-section{
+            display: flex;
+            margin-top: -650px;
+        }
+        .foto-mobile{
+            display: flex;
+            margin-left: 190px;
+            margin-top: -100px;
+        }
+        .descricao{
+            display: flex;
+            width: 330px;
+            height: 220px;
+            margin-top: -3px;
+            border-radius: 15px;
+            border: 3px solid rgb(89, 89, 177);
+        }
+        .titulo-descricao{
+            color: white;
+            margin-top: 15px;
+            font-size: 28px;
+        }
+        .descricao-texto{
+            display: flex;
+            margin-top: -160px;
+            width: 270px;
+            height: 50px;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            font-weight:100;
+        }
+        .botao-leia-mais{
+            display: flex;
+            margin-top: 130px;
+            width: 115px;
+            height: 35px;
+            border-radius: 20px;
+            background-color: white;
+            color: rgb(82,23,137);
+            font-size: 7px;
+            justify-content: center;
+            align-items: center;
+        }
+        .seta{
+            display: flex;
+            margin-top: 40px;
+            left: 310px;
+            opacity: 40%;
+        }
+}
+/* desktop */
+@media (min-width:1024px){
+        .primeira-section{
+            display: flex;
+            width: 500px;
+        }
+        .section-grid-1{
+            flex-direction: row-reverse;
+        }
+        .header{
+            display: flex;
+        }
+        .main-header{
+            display: block;
+        }
+        .icone-profiabet{
+            display: flex;
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 230px;
+        }
+        .login{
+            display: flex;
+            position: relative;
+            margin-top: 180px;
+            margin-left: 230px;
+            gap:10px;
+            flex-direction: row;
+            position: relative;
+        }
+        .criar-conta{
+            display: flex;
+            width: 135px;
+            height: 35px;
+            border-radius: 20px;
+            background-color: rgb(216, 158, 49);
+            font-size: 12px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border: 1px solid white;
+        }
+        .sessao{
+            display: flex;
+            width: 135px;
+            height: 35px;
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+            font-size: 12px;
+            justify-content: center;
+            align-items: center;
+            color: rgb(82,23,137);
+            border: 1px solid white;
+        }
+        .segunda-section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-top: -650px;
+        }
+        .foto-mobile{
+            display: flex;
+            position: relative;
+            margin-left: 190px;
+            margin-top: -100px;
+        }
+        .descricao{
+            display: flex;
+            position: relative;
+            width: 330px;
+            height: 220px;
+            left: 210px;
+            margin-top: -3px;
+            border-radius: 15px;
+            border: 3px solid rgb(89, 89, 177);
+        }
+        .titulo-descricao{
+            color: white;
+            position: relative;
+            margin-top: 15px;
+            left: 25px;
+            font-size: 28px;
+        }
+        .descricao-texto{
+            display: flex;
+            position: relative;
+            margin-top: -160px;
+            width: 270px;
+            height: 50px;
+            left: 235px;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            font-weight:100;
+        }
+        .botao-leia-mais{
+            display: flex;
+            position: relative;
+            margin-top: 130px;
+            left: 320px;
+            width: 115px;
+            height: 35px;
+            border-radius: 20px;
+            background-color: white;
+            color: rgb(82,23,137);
+            font-size: 7px;
+            justify-content: center;
+            align-items: center;
+        }
+        .seta{
+            display: flex;
+            position: relative;
+            margin-top: 40px;
+            left: 310px;
+            opacity: 40%;
+        }
 }
